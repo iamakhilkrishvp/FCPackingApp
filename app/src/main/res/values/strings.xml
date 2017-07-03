@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">FC Packing App</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_customer_details">CustomerDetailsActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="title_activity_vegetable_stock">VegetableStockActivity</string>
+    <string name="title_activity_vegetable_order">VegetableOrderActivity</string>
+    <string name="title_activity_summary">SummaryActivity</string>
+    <string name="title_activity_veg_order">VegOrderActivity</string>
+    <string name="title_activity_vegetable_order_page">VegetableOrderPage</string>
+    <string name="title_activity_trade_customers">TradeCustomers</string>
+    <string name="title_activity_trade_customer_details">TradeCustomerDetails</string>
+    <string name="title_activity_add_farm">AddFarmActivity</string>
+    <string name="title_activity_shortage_list">ShortageList</string>
+    <string name="title_activity_shortage">ShortageActivity</string>
+    <string name="title_activity_trade_customer_detail">TradeCustomerDetail</string>
+    <string name="title_activity_non_preference">NonPreferenceActivity</string>
+    <string name="title_activity_stock">StockActivity</string>
+</resources>

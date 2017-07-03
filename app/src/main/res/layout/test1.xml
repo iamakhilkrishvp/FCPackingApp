@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fitsSystemWindows="true"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:background="#1A000000"
+    >
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/filterText"
+        android:maxLines="1"
+        android:layout_marginTop="5dp"
+        android:layout_alignBottom="@+id/searchBtn"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/searchBtn" />
+
+    <TextView
+        android:layout_height="45dp"
+        android:text="SEARCH"
+        android:background="@drawable/textview_bg"
+        android:gravity="center"
+        android:textColor="#80000000"
+        android:textStyle="bold"
+        android:id="@+id/searchBtn"
+        android:layout_width="80dp"
+        android:layout_marginTop="81dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true" />
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:layout_above="@+id/syncButton"
+        android:layout_below="@+id/filterText"
+        android:id="@+id/recyclerview">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:text="SYNC"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:background="@color/colorPrimaryDark"
+        android:gravity="center"
+        android:id="@+id/syncButton"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/recyclerview"
+        android:layout_toStartOf="@+id/textView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="v"
+        android:textColor="@color/white"
+        android:id="@+id/textView"
+        android:layout_alignTop="@+id/filterText"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:text="FILTER"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:background="@color/colorPrimaryDark"
+        android:gravity="center"
+        android:id="@+id/textView2"
+        android:layout_alignBottom="@+id/syncButton"
+        android:layout_alignEnd="@+id/recyclerview"
+        android:layout_toEndOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="12dp"
+        android:layout_width="60dp"
+        android:layout_height="35dp"
+        android:text="GO"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:background="@drawable/textview_bg" />
+
+    <TextView
+        android:id="@+id/textView84"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView22"
+        android:layout_alignParentStart="true"
+        android:text="TextView"
+        android:layout_marginRight="5dp"
+        android:paddingLeft="10dp"
+        android:background="@drawable/textview_bg"
+        android:gravity="center_vertical"
+        android:layout_alignTop="@+id/textView22"
+        android:layout_toStartOf="@+id/textView22" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:visibility="invisible"
+        android:layout_alignTop="@+id/textView22"
+        android:layout_toStartOf="@+id/textView22"
+        android:layout_alignBottom="@+id/textView22" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        app:srcCompat="@drawable/down_arrow"
+        android:layout_alignTop="@+id/textView84"
+        android:layout_toStartOf="@+id/searchBtn"
+        android:layout_marginTop="11dp" />
+
+</RelativeLayout>
+
+    <!--
+    -->

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="300dp"
+    android:layout_height="300dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Filter by Farm"
+        android:textSize="18sp"
+        android:textColor="#80000000"
+        android:id="@+id/textView55"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="29dp" />
+
+    <Spinner
+        android:layout_width="200dp"
+        android:layout_height="35dp"
+        android:id="@+id/spinner3"
+        android:layout_alignParentEnd="true"
+        android:visibility="invisible"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="35dp"
+        android:layout_below="@+id/textView55"
+        android:layout_alignStart="@+id/textView55" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:gravity="center_vertical"
+        android:textColor="@color/black"
+        android:background="@drawable/textview_bg"
+        android:padding="8dp"
+        android:layout_marginRight="10dp"
+        android:id="@+id/textView56"
+        android:layout_alignStart="@+id/spinner3"
+        android:layout_alignTop="@+id/spinner3"
+        android:layout_alignParentEnd="true"
+        android:layout_alignBottom="@+id/spinner3" />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="35dp"
+        android:text="FILTER"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:background="@drawable/black_border"
+        android:id="@+id/textView57"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="44dp" />
+</RelativeLayout>

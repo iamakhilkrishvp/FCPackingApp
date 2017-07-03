@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="cied.in.fcpacking.VegetableOrderActivity"
+    tools:showIn="@layout/activity_vegetable_order">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:text="UPDATE"
+        android:textColor="@color/white"
+        android:layout_marginBottom="5dp"
+        android:textSize="20sp"
+        android:background="@color/colorPrimaryDark"
+        android:gravity="center"
+        android:id="@+id/updateButton"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/textView12" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText4"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/textView65"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" />
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/recyclerview"
+        android:layout_marginBottom="5dp"
+        android:layout_below="@+id/editText4"
+        android:layout_above="@+id/updateButton">
+
+    </android.support.v7.widget.RecyclerView>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:id="@+id/textView12"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="47dp"
+        android:text="SUMMARY"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:id="@+id/summary"
+        android:layout_alignBottom="@+id/updateButton"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/textView12" />
+
+    <TextView
+        android:id="@+id/textView67"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/summary"
+        android:text="ADD FARM"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/textView12"
+        android:layout_alignBottom="@+id/updateButton" />
+
+    <Spinner
+        android:id="@+id/spinner2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:visibility="invisible"
+        android:layout_alignParentTop="true"
+        android:layout_toStartOf="@+id/textView65" />
+
+    <TextView
+        android:id="@+id/textView65"
+        android:layout_width="60dp"
+        android:layout_height="35dp"
+        android:text="GO"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:background="@drawable/textview_bg"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/textView66"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/spinner2"
+        android:layout_alignParentStart="true"
+        android:text="TextView"
+        android:paddingLeft="10dp"
+        android:gravity="center_vertical"
+        android:layout_alignParentTop="true"
+        android:layout_toStartOf="@+id/textView65" />
+
+
+</RelativeLayout>

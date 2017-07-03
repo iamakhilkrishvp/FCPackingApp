@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="8dp"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="cied.in.fcpacking.NonPreferenceActivity"
+    tools:showIn="@layout/activity_non_preference">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cardView"
+        android:layout_marginTop="15dp"
+        android:layout_alignParentStart="true">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp">
+            <TextView
+                android:id="@+id/textView74"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="21dp"
+                android:layout_marginTop="15dp"
+                android:text="Non Pref. Total Qty : "
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:id="@+id/textView75"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="24.5 kg"
+                android:layout_marginLeft="15dp"
+                android:layout_alignBaseline="@+id/textView74"
+                android:layout_alignBottom="@+id/textView74"
+                android:layout_toEndOf="@+id/textView74" />
+            <TextView
+                android:id="@+id/textView76"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="13dp"
+                android:text="Customers Count : "
+                android:layout_below="@+id/textView74"
+                android:layout_toStartOf="@+id/textView75" />
+            <TextView
+                android:id="@+id/textView77"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="25"
+                android:layout_alignBaseline="@+id/textView76"
+                android:layout_alignBottom="@+id/textView76"
+                android:layout_alignStart="@+id/textView75" />
+
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+
+     <android.support.v7.widget.RecyclerView
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:layout_below="@+id/cardView"
+         android:layout_marginBottom="10dp"
+         android:layout_marginTop="10dp"
+         android:id="@+id/recyclerview"
+         android:layout_marginLeft="10dp">
+
+     </android.support.v7.widget.RecyclerView>
+
+
+</RelativeLayout>

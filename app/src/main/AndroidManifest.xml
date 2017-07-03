@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="cied.in.fcpacking">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".CustomerDetailsActivity"
+            android:label="@string/title_activity_customer_details"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".CurrentStatusActivity"
+            android:label="@string/title_activity_vegetable_stock"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".SummaryActivity"
+            android:label="@string/title_activity_summary"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".TradeCustomers"
+            android:label="@string/title_activity_trade_customers"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".TradeCustomerDetails"
+            android:label="@string/title_activity_trade_customer_details"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AddFarmActivity"
+            android:label="@string/title_activity_add_farm"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ShortageList"
+            android:label="@string/title_activity_shortage_list"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".VegetableOrderActivity"
+            android:label="@string/title_activity_vegetable_order"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ShortageActivity"
+            android:label="@string/title_activity_shortage"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <!--
+            <activity
+            android:name=".TradeCustomerDetail"
+            android:label="@string/title_activity_trade_customer_detail"
+            android:theme="@style/AppTheme.NoActionBar" />
+        -->
+        <activity
+            android:name=".NonPreferenceActivity"
+            android:label="@string/title_activity_non_preference"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".StockActivity"
+            android:label="@string/title_activity_stock"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+    </application>
+
+</manifest>
